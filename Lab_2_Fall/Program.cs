@@ -42,16 +42,46 @@ namespace Lab_2_Fall
 
                 //
                 Console.Write("Please enter the amount of hours worked: ");
-                hours = Console.ReadLine();
-                floatHours = float.Parse(hours);
-                lHours.Add(floatHours);
+                while (true)
+                {
+                    hours = Console.ReadLine();
+
+                    if (float.TryParse(hours, out floatHours))
+                    {
+                        lHours.Add(floatHours);
+                        break;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Invalid input. Please enter a valid number for hours worked.");
+                        
+                    }
+                }
+                //hours = Console.ReadLine();
+                //floatHours = float.Parse(hours);
+                //lHours.Add(floatHours);
 
 
                 //
                 Console.Write("Please enter the wage: ");
-                wage = Console.ReadLine();
-                floatWage = float.Parse(wage);
-                lWage.Add(floatWage);
+                while (true)
+                {
+                    wage = Console.ReadLine();
+
+                    if (float.TryParse(wage, out floatWage))
+                    {
+                        lWage.Add(floatWage);
+                        break;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Invalid input. Please enter a valid number for wage.");
+
+                    }
+                }
+                //wage = Console.ReadLine();
+                //floatWage = float.Parse(wage);
+                //lWage.Add(floatWage);
 
                 //
                 floatGross = floatHours * floatWage;
@@ -71,6 +101,11 @@ namespace Lab_2_Fall
                 else if (floatGross >= 100)
                 {
                     floatTaxes = 20;
+                }
+
+                else
+                {
+                    floatTaxes = 0; 
                 }
 
                 //
