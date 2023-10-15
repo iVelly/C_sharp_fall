@@ -15,7 +15,7 @@ namespace Lab_2_Fall
 
             int intCounter = 0;
     
-            float floatTaxes = 0, floatHours = 0, floatWage = 0, floatGross = 0, floatNet = 0;
+            float floatTaxes = 0, floatHours = 0, floatWage = 0, floatGross = 0, floatNet = 0, averageIncome = 0, averageNetpayResult = 0;
 
             
             // Establishing my lists
@@ -27,6 +27,7 @@ namespace Lab_2_Fall
             List<float> lNet = new List<float>();
 
             do
+
             {
                 // Collecting info
                 Console.WriteLine("Hello There!");
@@ -74,15 +75,18 @@ namespace Lab_2_Fall
 
                 //
                 floatNet = floatGross - (floatTaxes / 100) * floatGross;
+               
+                lTaxes.Add(floatTaxes);
                 lNet.Add(floatNet);
+                averageIncome += floatNet;
 
                 // Ask if they want to add more employees to check wages and what not. If not  exit do loop
                 Console.WriteLine("Would you like add more employees? Y/N");
-                strResults = Console.ReadLine();
+                strResults = Console.ReadLine().ToUpper();
 
 
 
-                
+
 
             } while (strResults == "Y");
 
@@ -95,25 +99,27 @@ namespace Lab_2_Fall
             Console.ReadKey();
 
             //iterating thru the index to display each employees information
-            foreach (var i in lNames)
+            for (int i = 0; i < lNames.Count; i++)
             {
                 Console.WriteLine("===============");
-                Console.WriteLine("Name" + ":" + lNames[0]);   //lNames
-                Console.WriteLine("Hours worked: " + lHours[0]);
-                Console.WriteLine("Wage: $" + lWage[0]);
-                Console.WriteLine("Gross pay: $" + lGrossPay[0]);
-                //Console.WriteLine("Taxes: " + lTaxes[0] + "%");
-                Console.WriteLine("Net pay: $" + lNet[0]);
+                Console.WriteLine("Name" + ":" + lNames[i]);  
+                Console.WriteLine("Hours worked: " + lHours[i]);
+                Console.WriteLine("Wage: $" + lWage[i]);
+                Console.WriteLine("Gross pay: $" + lGrossPay[i]);
+                Console.WriteLine("Taxes: " + lTaxes[i  ] + "%");
+                Console.WriteLine("Net pay: $" + lNet[i]);
                 Console.WriteLine("===============");
 
 
             }
-            //
-            //floatNet = floatGross - (floatTaxes / 100) * floatGross;
-            //
-            //Console.WriteLine($"Your amt of taxes is " + floatTaxes + " %");
-            //Console.WriteLine($"Your Gross Pay is $ " + floatGross);
-            //Console.WriteLine($"Your net Pay is $ " + floatNet);
+            // Calculate and display the average income and display it.
+            if(intCounter > 1)
+            {
+                Console.WriteLine("\nTotal number of employees: " + intCounter);
+                averageNetpayResult = (averageIncome / intCounter);
+                Console.WriteLine("Average Income: $" + averageNetpayResult);
+            }
+            
 
             Console.WriteLine("\n\nPress any Key to end program");
             Console.ReadKey();

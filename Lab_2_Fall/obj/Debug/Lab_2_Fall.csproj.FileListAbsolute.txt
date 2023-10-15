@@ -6,3 +6,10 @@ C:\Users\008017491\source\repos\C_sharp_fall\Lab_2_Fall\obj\Debug\Lab_2_Fall.csp
 C:\Users\008017491\source\repos\C_sharp_fall\Lab_2_Fall\obj\Debug\Lab_2_Fall.csproj.CoreCompileInputs.cache
 C:\Users\008017491\source\repos\C_sharp_fall\Lab_2_Fall\obj\Debug\Lab_2_Fall.exe
 C:\Users\008017491\source\repos\C_sharp_fall\Lab_2_Fall\obj\Debug\Lab_2_Fall.pdb
+C:\Users\redzo\Source\Repos\iVelly\C_sharp_fall\Lab_2_Fall\bin\Debug\Lab_2_Fall.exe.config
+C:\Users\redzo\Source\Repos\iVelly\C_sharp_fall\Lab_2_Fall\bin\Debug\Lab_2_Fall.exe
+C:\Users\redzo\Source\Repos\iVelly\C_sharp_fall\Lab_2_Fall\bin\Debug\Lab_2_Fall.pdb
+C:\Users\redzo\Source\Repos\iVelly\C_sharp_fall\Lab_2_Fall\obj\Debug\Lab_2_Fall.csproj.AssemblyReference.cache
+C:\Users\redzo\Source\Repos\iVelly\C_sharp_fall\Lab_2_Fall\obj\Debug\Lab_2_Fall.csproj.CoreCompileInputs.cache
+C:\Users\redzo\Source\Repos\iVelly\C_sharp_fall\Lab_2_Fall\obj\Debug\Lab_2_Fall.exe
+C:\Users\redzo\Source\Repos\iVelly\C_sharp_fall\Lab_2_Fall\obj\Debug\Lab_2_Fall.pdb
