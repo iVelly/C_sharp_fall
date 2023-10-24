@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -8,6 +9,31 @@ namespace Lab_3_fall
 {
     internal class Program
     {
+        //Void Method
+        // I could use the void method to display information to users 
+        //
+        static void displayIncome()
+        {
+            Console.WriteLine("\n\nPress any Key to display income");
+            Console.ReadKey();
+
+        }
+
+        static void Pause()
+        {
+            Console.WriteLine("\n\nPress any Key to end program");
+            Console.ReadKey();
+
+        }
+        //Return Method
+        //I could use the return method to return the user's name
+        static string Greeting(string strFirst)
+        {
+           string statement = Console.WriteLine("Alright, " + strFirst + "! Let's calculate your payroll!");
+            return statement;
+        }
+        //By Ref
+        // I could pass the use the "By Ref" method to keep up with the average income considering the number is always changing
         static void Main(string[] args)
         {
             // Declaring variables
@@ -15,7 +41,11 @@ namespace Lab_3_fall
 
             int intCounter = 0;
 
-            float floatTaxes = 0, floatHours = 0, floatWage = 0, floatGross = 0, floatNet = 0, averageIncome = 0, averageNetpayResult = 0;
+            float floatTaxes = 0, floatTaxesDeductions = 0, floatHours = 0, floatWage = 0, floatGross = 0, floatNet = 0, averageIncome = 0, averageNetpayResult = 0;
+
+            bool blnHours = true, blnWage = true;
+
+            
 
 
             // Establishing my lists
@@ -36,95 +66,78 @@ namespace Lab_3_fall
                 lNames.Add(strFirst);
                 intCounter++;
 
-                //
+                // Greet User
                 Console.WriteLine("Alright, " + strFirst + "! Let's calculate your payroll!");
 
-
-                //
-                Console.Write("Please enter the amount of hours worked: ");
-                while (true)
+                // Collect amount of hours worked from user
+                do
                 {
+                    Console.Write("Please enter the amount of hours worked: ");
                     hours = Console.ReadLine();
+                    floatHours = float.Parse(hours);
+                    lHours.Add(floatHours);
 
-                    if (float.TryParse(hours, out floatHours))
-                    {
-                        lHours.Add(floatHours);
-                        break;
-                    }
-                    else
-                    {
-                        Console.WriteLine("Invalid input. Please enter a valid number for hours worked.");
+                    if (blnHours == false)
+                        Console.WriteLine("Invalid input. Please enter a valid number for hours.");
 
-                    }
-                }
-                //hours = Console.ReadLine();
-                //floatHours = float.Parse(hours);
-                //lHours.Add(floatHours);
+                } while (blnHours == false);
 
 
-                //
-                //Console.Write("Please enter the wage: ");
-                //while (true)
+
+                // Collect Wage information from user
+                do
                 {
-                    //wage = Console.ReadLine();
+                    Console.Write("Please enter the wage: ");
+                    wage = Console.ReadLine();
+                    floatWage = float.Parse(wage);
+                    lWage.Add(floatWage);
 
-                    //if (float.TryParse(wage, out floatWage))
-                    {
-                        //lWage.Add(floatWage);
-                        //break;
-                    }
-                    //else
-                    {
-                        //Console.WriteLine("Invalid input. Please enter a valid number for wage.");
 
-                    }
-                }
+                    if (blnWage == false)
+                        Console.WriteLine("Invalid input. Please enter a valid number for wages.");
 
-                while (float.TryParse(wage, out floatWage))
-                {
-                    if (true)
-                    {
-                        lWage.Add(floatWage);
-                    }
-                    else
-                    {
-                        Console.WriteLine("Invalid input. Please enter a valid number for wage.");
-                    }
+                } while (blnWage == false);
 
-                }
-                //wage = Console.ReadLine();
-                //floatWage = float.Parse(wage);
-                //lWage.Add(floatWage);
 
-                //
+                // Calculate Gross Pay
                 floatGross = floatHours * floatWage;
                 lGrossPay.Add(floatGross);
 
-                //
+                // Calculate taxes being deducted based on gross pay
                 if (floatGross >= 1000)
                 {
                     floatTaxes = 50;
+                    floatTaxesDeductions = (floatTaxes / 100) * floatGross;
+
                 }
 
                 else if (floatGross >= 500)
                 {
                     floatTaxes = 30;
+                    floatTaxesDeductions = (floatTaxes / 100) * floatGross;
+
                 }
 
                 else if (floatGross >= 100)
                 {
                     floatTaxes = 20;
+                    floatTaxesDeductions = (floatTaxes / 100) * floatGross;
+
                 }
 
                 else
                 {
                     floatTaxes = 0;
+                    floatTaxesDeductions = (floatTaxes / 100) * floatGross;
+
                 }
 
-                //
+                // Calculate Netpay
                 floatNet = floatGross - (floatTaxes / 100) * floatGross;
 
-                lTaxes.Add(floatTaxes);
+
+                // add to list
+                lTaxes.Add(floatTaxesDeductions);
                 lNet.Add(floatNet);
                 averageIncome += floatNet;
 
@@ -142,11 +155,12 @@ namespace Lab_3_fall
 
 
 
-            //
+            // Display Income
             Console.WriteLine("\n\nPress any Key to display income");
             Console.ReadKey();
 
             //iterating thru the index to display each employees information
+
             for (int i = 0; i < lNames.Count; i++)
             {
                 Console.WriteLine("===============");
@@ -154,7 +168,7 @@ namespace Lab_3_fall
                 Console.WriteLine("Hours worked: " + lHours[i]);
                 Console.WriteLine("Wage: $" + lWage[i]);
                 Console.WriteLine("Gross pay: $" + lGrossPay[i]);
-                Console.WriteLine("Taxes: " + lTaxes[i] + "%");
+                Console.WriteLine("Taxes: " + "$" + lTaxes[i]);
                 Console.WriteLine("Net pay: $" + lNet[i]);
                 Console.WriteLine("===============");
 
@@ -168,9 +182,10 @@ namespace Lab_3_fall
                 Console.WriteLine("Average Income: $" + averageNetpayResult);
             }
 
-
+            // Pause program before it closes
             Console.WriteLine("\n\nPress any Key to end program");
             Console.ReadKey();
         }
     }
 }
+
