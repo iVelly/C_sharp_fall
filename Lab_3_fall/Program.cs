@@ -27,17 +27,27 @@ namespace Lab_3_fall
         }
         //Return Method
         //I could use the return method to return the user's name
-        static string Greeting(string strFirst)
+        static string nameCollection()
         {
-           string statement = Console.WriteLine("Alright, " + strFirst + "! Let's calculate your payroll!");
-            return statement;
+            Console.WriteLine("Hello There!");
+            Console.Write("Please enter your first name: ");
+            string name = Console.ReadLine();
+            
+
+            return name ; // Return the provided name
         }
         //By Ref
         // I could pass the use the "By Ref" method to keep up with the average income considering the number is always changing
+        static void updateAverageIncome(ref float averageIncome, ref float floatNet)
+        {
+            averageIncome += floatNet;
+        }
+        
+
         static void Main(string[] args)
         {
             // Declaring variables
-            string strFirst, hours, wage, strResults;
+            string firstName, hours, wage, strResults;
 
             int intCounter = 0;
 
@@ -60,14 +70,10 @@ namespace Lab_3_fall
 
             {
                 // Collecting info
-                Console.WriteLine("Hello There!");
-                Console.Write("Please enter the first name: ");
-                strFirst = Console.ReadLine();
-                lNames.Add(strFirst);
+                firstName = nameCollection(); // Calling the method and store the result in 'firstName'
+                Console.WriteLine("Hello, " + firstName + "! Let's proceed with the payroll calculation.");
+                lNames.Add(firstName);
                 intCounter++;
-
-                // Greet User
-                Console.WriteLine("Alright, " + strFirst + "! Let's calculate your payroll!");
 
                 // Collect amount of hours worked from user
                 do
@@ -139,7 +145,8 @@ namespace Lab_3_fall
                 // add to list
                 lTaxes.Add(floatTaxesDeductions);
                 lNet.Add(floatNet);
-                averageIncome += floatNet;
+                updateAverageIncome(ref averageIncome, ref floatNet);
+                //averageIncome += floatNet;
 
                 // Ask if they want to add more employees to check wages and what not. If not  exit do loop
                 Console.WriteLine("Would you like add more employees? Y/N");
@@ -156,8 +163,7 @@ namespace Lab_3_fall
 
 
             // Display Income
-            Console.WriteLine("\n\nPress any Key to display income");
-            Console.ReadKey();
+            displayIncome();
 
             //iterating thru the index to display each employees information
 
@@ -183,8 +189,7 @@ namespace Lab_3_fall
             }
 
             // Pause program before it closes
-            Console.WriteLine("\n\nPress any Key to end program");
-            Console.ReadKey();
+            Pause();
         }
     }
 }
