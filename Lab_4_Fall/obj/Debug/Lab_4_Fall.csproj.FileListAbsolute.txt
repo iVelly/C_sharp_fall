@@ -1,0 +1,8 @@
+C:\Users\008017491\source\repos\iVelly\C_sharp_fall\Lab_4_Fall\bin\Debug\Lab_4_Fall.exe.config
+C:\Users\008017491\source\repos\iVelly\C_sharp_fall\Lab_4_Fall\bin\Debug\Lab_4_Fall.exe
+C:\Users\008017491\source\repos\iVelly\C_sharp_fall\Lab_4_Fall\bin\Debug\Lab_4_Fall.pdb
+C:\Users\008017491\source\repos\iVelly\C_sharp_fall\Lab_4_Fall\obj\Debug\Lab_4_Fall.csproj.AssemblyReference.cache
+C:\Users\008017491\source\repos\iVelly\C_sharp_fall\Lab_4_Fall\obj\Debug\Lab_4_Fall.csproj.SuggestedBindingRedirects.cache
+C:\Users\008017491\source\repos\iVelly\C_sharp_fall\Lab_4_Fall\obj\Debug\Lab_4_Fall.csproj.CoreCompileInputs.cache
+C:\Users\008017491\source\repos\iVelly\C_sharp_fall\Lab_4_Fall\obj\Debug\Lab_4_Fall.exe
+C:\Users\008017491\source\repos\iVelly\C_sharp_fall\Lab_4_Fall\obj\Debug\Lab_4_Fall.pdb
