@@ -38,7 +38,7 @@ namespace Lab_3_fall
         }
         //By Ref
         // I could pass the use the "By Ref" method to keep up with the average income considering the number is always changing
-        static void updateAverageIncome(ref float averageIncome, ref float floatNet)
+        static void updateAverageIncome(ref float averageIncome, float floatNet)
         {
             averageIncome += floatNet;
         }
@@ -80,13 +80,18 @@ namespace Lab_3_fall
                 {
                     Console.Write("Please enter the amount of hours worked: ");
                     hours = Console.ReadLine();
-                    floatHours = float.Parse(hours);
-                    lHours.Add(floatHours);
 
-                    if (blnHours == false)
+                    if (float.TryParse(hours, out floatHours))
+                    {
+                        lHours.Add(floatHours);
+                    }
+                    else
+                    {
                         Console.WriteLine("Invalid input. Please enter a valid number for hours.");
+                    }
 
                 } while (blnHours == false);
+
 
 
 
@@ -95,12 +100,15 @@ namespace Lab_3_fall
                 {
                     Console.Write("Please enter the wage: ");
                     wage = Console.ReadLine();
-                    floatWage = float.Parse(wage);
-                    lWage.Add(floatWage);
 
-
-                    if (blnWage == false)
+                    if (float.TryParse(wage, out floatWage))
+                    {
+                        lWage.Add(floatWage);
+                    }
+                    else
+                    {
                         Console.WriteLine("Invalid input. Please enter a valid number for wages.");
+                    }
 
                 } while (blnWage == false);
 
@@ -145,8 +153,8 @@ namespace Lab_3_fall
                 // add to list
                 lTaxes.Add(floatTaxesDeductions);
                 lNet.Add(floatNet);
-                updateAverageIncome(ref averageIncome, ref floatNet);
-                //averageIncome += floatNet;
+                updateAverageIncome(ref averageIncome, floatNet);
+
 
                 // Ask if they want to add more employees to check wages and what not. If not  exit do loop
                 Console.WriteLine("Would you like add more employees? Y/N");
