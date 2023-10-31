@@ -42,7 +42,27 @@ namespace Lab_3_fall
         {
             averageIncome += floatNet;
         }
-        
+
+        // Float Hours Validation
+        static bool isFloatHoursValid(string hours)
+        {
+            float floatHours = 0;
+            bool blnResults = float.TryParse(hours, out floatHours);
+
+            return blnResults;
+
+        }
+
+        // Float Wage Validation
+        static bool isFloatWageValid(string wage)
+        {
+            float floatWage = 0;
+            bool blnResults = float.TryParse(wage, out floatWage);
+
+            return blnResults;
+
+        }
+
 
         static void Main(string[] args)
         {
@@ -53,7 +73,9 @@ namespace Lab_3_fall
 
             float floatTaxes = 0, floatTaxesDeductions = 0, floatHours = 0, floatWage = 0, floatGross = 0, floatNet = 0, averageIncome = 0, averageNetpayResult = 0;
 
-            bool blnHours = true, blnWage = true;
+             bool blnResult = false;
+
+            
 
             
 
@@ -81,16 +103,20 @@ namespace Lab_3_fall
                     Console.Write("Please enter the amount of hours worked: ");
                     hours = Console.ReadLine();
 
-                    if (float.TryParse(hours, out floatHours))
+                    blnResult = isFloatHoursValid (hours);
+
+                    if (blnResult == false)
                     {
-                        lHours.Add(floatHours);
+                        Console.WriteLine("Invalid input. Please enter a valid number for hours.");
+                        
                     }
                     else
                     {
-                        Console.WriteLine("Invalid input. Please enter a valid number for hours.");
+                        float.TryParse(hours, out floatHours);
+                        lHours.Add(floatHours);
                     }
 
-                } while (blnHours == false);
+                } while (blnResult == false);
 
 
 
@@ -98,19 +124,23 @@ namespace Lab_3_fall
                 // Collect Wage information from user
                 do
                 {
-                    Console.Write("Please enter the wage: ");
+                    Console.Write("Please enter the amount of wage worked: ");
                     wage = Console.ReadLine();
 
-                    if (float.TryParse(wage, out floatWage))
+                    blnResult = isFloatWageValid(wage);
+
+                    if (blnResult == false)
                     {
-                        lWage.Add(floatWage);
+                        Console.WriteLine("Invalid input. Please enter a valid number for wage.");
+
                     }
                     else
                     {
-                        Console.WriteLine("Invalid input. Please enter a valid number for wages.");
+                        float.TryParse(wage, out floatWage);
+                        lWage.Add(floatWage);
                     }
 
-                } while (blnWage == false);
+                } while (blnResult == false);
 
 
                 // Calculate Gross Pay
