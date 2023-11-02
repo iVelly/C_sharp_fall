@@ -37,11 +37,13 @@
             this.lblFeedback = new System.Windows.Forms.Label();
             this.btnAdd = new System.Windows.Forms.Button();
             this.lblAuthor = new System.Windows.Forms.Label();
-            this.txtAuthor = new System.Windows.Forms.TextBox();
+            this.txtAuthorFirst = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.lblEmail = new System.Windows.Forms.Label();
             this.txtPages = new System.Windows.Forms.TextBox();
             this.lblPages = new System.Windows.Forms.Label();
+            this.txtAuthorLast = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -58,7 +60,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(25, 96);
+            this.label2.Location = new System.Drawing.Point(17, 96);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(206, 31);
             this.label2.TabIndex = 1;
@@ -68,7 +70,7 @@
             // 
             this.lblPrice.AutoSize = true;
             this.lblPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrice.Location = new System.Drawing.Point(25, 220);
+            this.lblPrice.Location = new System.Drawing.Point(30, 263);
             this.lblPrice.Name = "lblPrice";
             this.lblPrice.Size = new System.Drawing.Size(84, 31);
             this.lblPrice.TabIndex = 2;
@@ -86,7 +88,7 @@
             // txtPrice
             // 
             this.txtPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPrice.Location = new System.Drawing.Point(107, 213);
+            this.txtPrice.Location = new System.Drawing.Point(127, 256);
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(171, 38);
             this.txtPrice.TabIndex = 4;
@@ -103,12 +105,13 @@
             // lblFeedback
             // 
             this.lblFeedback.AutoSize = true;
-            this.lblFeedback.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F);
-            this.lblFeedback.Location = new System.Drawing.Point(449, 147);
+            this.lblFeedback.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.lblFeedback.Location = new System.Drawing.Point(458, 96);
             this.lblFeedback.Name = "lblFeedback";
-            this.lblFeedback.Size = new System.Drawing.Size(243, 29);
+            this.lblFeedback.Size = new System.Drawing.Size(160, 20);
             this.lblFeedback.TabIndex = 6;
             this.lblFeedback.Text = "Feedback goes here";
+            this.lblFeedback.Click += new System.EventHandler(this.lblFeedback_Click);
             // 
             // btnAdd
             // 
@@ -124,19 +127,19 @@
             // 
             this.lblAuthor.AutoSize = true;
             this.lblAuthor.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAuthor.Location = new System.Drawing.Point(25, 164);
+            this.lblAuthor.Location = new System.Drawing.Point(12, 164);
             this.lblAuthor.Name = "lblAuthor";
-            this.lblAuthor.Size = new System.Drawing.Size(102, 31);
+            this.lblAuthor.Size = new System.Drawing.Size(242, 31);
             this.lblAuthor.TabIndex = 8;
-            this.lblAuthor.Text = "Author:";
+            this.lblAuthor.Text = "Author First Name:";
             // 
-            // txtAuthor
+            // txtAuthorFirst
             // 
-            this.txtAuthor.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAuthor.Location = new System.Drawing.Point(125, 157);
-            this.txtAuthor.Name = "txtAuthor";
-            this.txtAuthor.Size = new System.Drawing.Size(171, 38);
-            this.txtAuthor.TabIndex = 9;
+            this.txtAuthorFirst.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAuthorFirst.Location = new System.Drawing.Point(259, 161);
+            this.txtAuthorFirst.Name = "txtAuthorFirst";
+            this.txtAuthorFirst.Size = new System.Drawing.Size(171, 38);
+            this.txtAuthorFirst.TabIndex = 9;
             // 
             // txtEmail
             // 
@@ -159,7 +162,7 @@
             // txtPages
             // 
             this.txtPages.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPages.Location = new System.Drawing.Point(125, 270);
+            this.txtPages.Location = new System.Drawing.Point(125, 313);
             this.txtPages.Name = "txtPages";
             this.txtPages.Size = new System.Drawing.Size(171, 38);
             this.txtPages.TabIndex = 13;
@@ -168,23 +171,43 @@
             // 
             this.lblPages.AutoSize = true;
             this.lblPages.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPages.Location = new System.Drawing.Point(30, 277);
+            this.lblPages.Location = new System.Drawing.Point(25, 320);
             this.lblPages.Name = "lblPages";
             this.lblPages.Size = new System.Drawing.Size(99, 31);
             this.lblPages.TabIndex = 12;
             this.lblPages.Text = "Pages:";
             this.lblPages.Click += new System.EventHandler(this.label4_Click);
             // 
+            // txtAuthorLast
+            // 
+            this.txtAuthorLast.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAuthorLast.Location = new System.Drawing.Point(258, 205);
+            this.txtAuthorLast.Name = "txtAuthorLast";
+            this.txtAuthorLast.Size = new System.Drawing.Size(171, 38);
+            this.txtAuthorLast.TabIndex = 15;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(12, 208);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(240, 31);
+            this.label3.TabIndex = 14;
+            this.label3.Text = "Author Last Name:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtAuthorLast);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.txtPages);
             this.Controls.Add(this.lblPages);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.lblEmail);
-            this.Controls.Add(this.txtAuthor);
+            this.Controls.Add(this.txtAuthorFirst);
             this.Controls.Add(this.lblAuthor);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.lblFeedback);
@@ -196,6 +219,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -212,11 +236,13 @@
         private System.Windows.Forms.Label lblFeedback;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Label lblAuthor;
-        private System.Windows.Forms.TextBox txtAuthor;
+        private System.Windows.Forms.TextBox txtAuthorFirst;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.TextBox txtPages;
         private System.Windows.Forms.Label lblPages;
+        private System.Windows.Forms.TextBox txtAuthorLast;
+        private System.Windows.Forms.Label label3;
     }
 }
 
