@@ -21,7 +21,19 @@ namespace Lab_5_Book
         {
             //Fill the text property of the Feedback variable with the book title, price, and date published with some descriptive text/strings
             // the "value" property of a DateTimePicket returns variable. We converted it to a string in a append it to the string/text.
-            lblFeedback.Text = " Book Added: " + txtTitle.Text + "($" + txtPrice.Text + ") - Published " + dtpDatePublished.Value.ToString();
+            lblFeedback.Text = "Name of Book: " + txtTitle.Text + "\n ($" + txtPrice.Text + ")  \n Published " + dtpDatePublished.Value.ToString() + "\n  Author:" + txtAuthor.Text + "\n Pages:" + txtPages.Text + "\n  Email: " + txtEmail.Text ;
+            
+           
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
