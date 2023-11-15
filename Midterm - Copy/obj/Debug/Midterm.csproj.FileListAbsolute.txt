@@ -1,0 +1,21 @@
+C:\Users\Levi Da Don\source\repos\Midterm\bin\Debug\Midterm.exe.config
+C:\Users\Levi Da Don\source\repos\Midterm\bin\Debug\Midterm.exe
+C:\Users\Levi Da Don\source\repos\Midterm\bin\Debug\Midterm.pdb
+C:\Users\Levi Da Don\source\repos\Midterm\obj\Debug\Midterm.csproj.AssemblyReference.cache
+C:\Users\Levi Da Don\source\repos\Midterm\obj\Debug\Midterm.csproj.SuggestedBindingRedirects.cache
+C:\Users\Levi Da Don\source\repos\Midterm\obj\Debug\Midterm.Properties.Resources.resources
+C:\Users\Levi Da Don\source\repos\Midterm\obj\Debug\Midterm.csproj.GenerateResource.cache
+C:\Users\Levi Da Don\source\repos\Midterm\obj\Debug\Midterm.csproj.CoreCompileInputs.cache
+C:\Users\Levi Da Don\source\repos\Midterm\obj\Debug\Midterm.exe
+C:\Users\Levi Da Don\source\repos\Midterm\obj\Debug\Midterm.pdb
+C:\Users\Levi Da Don\source\repos\Midterm\obj\Debug\Midterm.Form1.resources
+C:\Users\redzo\Downloads\Midterm\Midterm\bin\Debug\Midterm.exe.config
+C:\Users\redzo\Downloads\Midterm\Midterm\bin\Debug\Midterm.exe
+C:\Users\redzo\Downloads\Midterm\Midterm\bin\Debug\Midterm.pdb
+C:\Users\redzo\Downloads\Midterm\Midterm\obj\Debug\Midterm.csproj.AssemblyReference.cache
+C:\Users\redzo\Downloads\Midterm\Midterm\obj\Debug\Midterm.Form1.resources
+C:\Users\redzo\Downloads\Midterm\Midterm\obj\Debug\Midterm.Properties.Resources.resources
+C:\Users\redzo\Downloads\Midterm\Midterm\obj\Debug\Midterm.csproj.GenerateResource.cache
+C:\Users\redzo\Downloads\Midterm\Midterm\obj\Debug\Midterm.csproj.CoreCompileInputs.cache
+C:\Users\redzo\Downloads\Midterm\Midterm\obj\Debug\Midterm.exe
+C:\Users\redzo\Downloads\Midterm\Midterm\obj\Debug\Midterm.pdb
