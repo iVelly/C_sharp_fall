@@ -1,0 +1,10 @@
+C:\Users\redzo\Documents\GitHub\C_sharp_fall\Lab_5_Valid_Customer\bin\Debug\Midterm.exe.config
+C:\Users\redzo\Documents\GitHub\C_sharp_fall\Lab_5_Valid_Customer\bin\Debug\Midterm.exe
+C:\Users\redzo\Documents\GitHub\C_sharp_fall\Lab_5_Valid_Customer\bin\Debug\Midterm.pdb
+C:\Users\redzo\Documents\GitHub\C_sharp_fall\Lab_5_Valid_Customer\obj\Debug\Lab_5_Valid_Customer.csproj.AssemblyReference.cache
+C:\Users\redzo\Documents\GitHub\C_sharp_fall\Lab_5_Valid_Customer\obj\Debug\Midterm.Form1.resources
+C:\Users\redzo\Documents\GitHub\C_sharp_fall\Lab_5_Valid_Customer\obj\Debug\Midterm.Properties.Resources.resources
+C:\Users\redzo\Documents\GitHub\C_sharp_fall\Lab_5_Valid_Customer\obj\Debug\Lab_5_Valid_Customer.csproj.GenerateResource.cache
+C:\Users\redzo\Documents\GitHub\C_sharp_fall\Lab_5_Valid_Customer\obj\Debug\Lab_5_Valid_Customer.csproj.CoreCompileInputs.cache
+C:\Users\redzo\Documents\GitHub\C_sharp_fall\Lab_5_Valid_Customer\obj\Debug\Midterm.exe
+C:\Users\redzo\Documents\GitHub\C_sharp_fall\Lab_5_Valid_Customer\obj\Debug\Midterm.pdb

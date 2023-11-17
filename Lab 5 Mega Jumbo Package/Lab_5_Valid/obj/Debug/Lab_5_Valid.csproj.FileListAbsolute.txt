@@ -1,0 +1,10 @@
+C:\Users\redzo\Documents\GitHub\C_sharp_fall\Midterm - Copy\obj\Debug\Lab_5_Valid.csproj.AssemblyReference.cache
+C:\Users\redzo\Documents\GitHub\C_sharp_fall\Midterm - Copy\obj\Debug\Midterm.Form1.resources
+C:\Users\redzo\Documents\GitHub\C_sharp_fall\Midterm - Copy\obj\Debug\Midterm.Properties.Resources.resources
+C:\Users\redzo\Documents\GitHub\C_sharp_fall\Midterm - Copy\obj\Debug\Lab_5_Valid.csproj.GenerateResource.cache
+C:\Users\redzo\Documents\GitHub\C_sharp_fall\Midterm - Copy\obj\Debug\Lab_5_Valid.csproj.CoreCompileInputs.cache
+C:\Users\redzo\Documents\GitHub\C_sharp_fall\Midterm - Copy\obj\Debug\Midterm.exe
+C:\Users\redzo\Documents\GitHub\C_sharp_fall\Midterm - Copy\obj\Debug\Midterm.pdb
+C:\Users\redzo\Documents\GitHub\C_sharp_fall\Midterm - Copy\bin\Debug\Midterm.exe.config
+C:\Users\redzo\Documents\GitHub\C_sharp_fall\Midterm - Copy\bin\Debug\Midterm.exe
+C:\Users\redzo\Documents\GitHub\C_sharp_fall\Midterm - Copy\bin\Debug\Midterm.pdb
