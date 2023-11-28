@@ -65,9 +65,9 @@ namespace Midterm
                 {
                     Feedback += "ERROR: Your name input contains profanity";
                 }
-                else if (ValidOrBuggin.TooManyLetters(value, 15) == false)
+                else if (ValidOrBuggin.TooManyLetters(value, 2) == false)
                 {
-                    Feedback += "\nERROR: Your First Name input is too long";
+                    Feedback += "\nERROR: Your middle Name input is too long";
                 }
                 else
                 {
@@ -186,6 +186,10 @@ namespace Midterm
                 {
                     Feedback += "\nERROR: State must contain only two letters";
                 }
+                else if (ValidOrBuggin.ContainsOnlyLetters(value))
+                {
+                    Feedback += "\nERROR: State must contain only letters";
+                }
                 else
                 {
                     state = value;
@@ -251,9 +255,9 @@ namespace Midterm
                 {
                     Feedback += "\nERROR: Your Email contains profanity";
                 }
-                else if (ValidOrBuggin.IsItFilledIn(value, 10) == false)
+                else if (!ValidOrBuggin.IsValidEmail(value))  
                 {
-                    Feedback += "\nERROR: Your email needs to be longer";
+                    Feedback += "\nERROR: Your email is not in a valid format";
                 }
                 else if (ValidOrBuggin.TooManyLetters(value, 45) == false)
                 {
