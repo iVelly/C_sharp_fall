@@ -19,7 +19,7 @@ namespace Midterm
             }
             set
             {
-                if (ValidOrBuggin.IsADouble(value) == false)
+                if (ValidOrBuggin.IsValidDouble(value) == false)
                 {
                     Feedback += "\nERROR: Cellphone must only contain numbers";
                 }

@@ -28,12 +28,13 @@ namespace Midterm
             bool result = temp.Length == value;
             return result;
         }
-        public static bool IsADouble(string temp)
+        public static bool IsValidDouble(string temp)
         {
             double dblResult;
             bool blnResult = double.TryParse(temp, out dblResult);
             return blnResult;
         }
+
 
         public static bool ValidInstagramURL(string temp)
         {

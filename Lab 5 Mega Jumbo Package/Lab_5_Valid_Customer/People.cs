@@ -45,6 +45,10 @@ namespace Midterm
                 {
                     Feedback += "\nERROR: Your First Name input is too long";
                 }
+                else if (ValidOrBuggin.IsItFilledIn(value, 1) == false)
+                {
+                    Feedback += "\nERROR: Your First Name input is not filled in";
+                }
                 else
                 {
                     firstName = value;
@@ -86,11 +90,15 @@ namespace Midterm
             {
                 if (ValidOrBuggin.GotProfanity(value))
                 {
-                    Feedback += "ERROR: Your name input contains profanity";
+                    Feedback += "ERROR: Your Last name input contains profanity";
                 }
                 else if (ValidOrBuggin.TooManyLetters(value, 15) == false)
                 {
-                    Feedback += "\nERROR: Your First Name input is too long";
+                    Feedback += "\nERROR: Your Last Name input is too long";
+                }
+                else if (ValidOrBuggin.IsItFilledIn(value, 1) == false)
+                {
+                    Feedback += "\nERROR: Your Last Name input is not filled in";
                 }
                 else
                 {
@@ -107,17 +115,17 @@ namespace Midterm
             }
             set
             {
-                if (ValidOrBuggin.GotProfanity(value))
+                 if (ValidOrBuggin.IsItFilledIn(value, 1) == false)
                 {
-                    Feedback += "ERROR: Your Street1 input contains profanity";
+                    Feedback += "\nERROR: Your Street1 input is not filled in";
                 }
                 else if (ValidOrBuggin.TooManyLetters(value, 45) == false)
                 {
                     Feedback += "\nERROR: Your Street1 input is too long";
                 }
-                else if (ValidOrBuggin.IsItFilledIn(value, 10) == false)
+                else if (ValidOrBuggin.GotProfanity(value))
                 {
-                    Feedback += "\nERROR: Your Street1 input is too short";
+                    Feedback += "\nERROR: Your Street1 input contains profanity";
                 }
                 else
                 {
@@ -136,7 +144,7 @@ namespace Midterm
             {
                 if (ValidOrBuggin.GotProfanity(value))
                 {
-                    Feedback += "ERROR: Your Street1 input contains profanity";
+                    Feedback += "\nERROR: Your Street1 input contains profanity";
                 }
                 else if (ValidOrBuggin.TooManyLetters(value, 45) == false)
                 {
@@ -186,7 +194,7 @@ namespace Midterm
                 {
                     Feedback += "\nERROR: State must contain only two letters";
                 }
-                else if (ValidOrBuggin.ContainsOnlyLetters(value))
+                else if (ValidOrBuggin.ContainsOnlyLetters(value) == false)
                 {
                     Feedback += "\nERROR: State must contain only letters";
                 }
@@ -209,7 +217,7 @@ namespace Midterm
                 {
                     Feedback += "\nERROR: Zipcode must contain only five digits";
                 }
-                else if (ValidOrBuggin.IsADouble(value) == false)
+                else if (ValidOrBuggin.IsValidDouble(value) == false)
                 {
                     Feedback += "\nERROR: Zipcode must only contain numbers";
                 }
@@ -232,7 +240,7 @@ namespace Midterm
                 {
                     Feedback += "\nERROR: Phone number must only contain 10 digits";
                 }
-                else if (ValidOrBuggin.IsADouble(value) == false)
+                else if (ValidOrBuggin.IsValidDouble(value) == false)
                 {
                     Feedback += "\nERROR: Phone number must only contain numbers";
                 }

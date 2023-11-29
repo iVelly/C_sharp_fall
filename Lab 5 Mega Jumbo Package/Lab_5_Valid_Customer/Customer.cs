@@ -40,20 +40,10 @@ namespace Midterm
             }
             set
             {
-                if (ValidOrBuggin.IsADouble(value.ToString()) == false)
-                {
-                    Feedback += "\nERROR: Total Purchases must be a number";
-                }
-                else if (ValidOrBuggin.IsItFilledIn(value.ToString(), 1) == false)
-                {
-                    Feedback += "\nERROR: Total Purchases must contain atleast one digit";
-                }
-                else
-                {
-                    totalPurchases = value;
-                }
+                totalPurchases = value;
             }
         }
+
 
         public bool DiscountMember
         {

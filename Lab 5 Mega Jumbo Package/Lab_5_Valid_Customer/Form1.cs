@@ -36,9 +36,37 @@ namespace Midterm
             temp.Phone = txtphone.Text;
             temp.Email = txtemail.Text;
             temp.CustomerSince = dtpCustomerSince.Value;
-            temp.TotalPurchases = double.Parse(txtTotalPurchase.Text);
+            
+            //
+            double totalPurchases;
+            // Try to convert the inputText to a double
+            if (double.TryParse(txtTotalPurchase.Text, out totalPurchases))
+            {
+                // Conversion succeeded, it's a valid number
+                temp.TotalPurchases = totalPurchases;
+            }
+            else
+            {
+                // Cant Convert?, it's not a valid number
+                // Show an error message to the user or handle the error correctlyyyyyyy
+                temp.Feedback += "\nERROR: Please enter a valid numeric value for Total Purchases.";
+            }
             temp.DiscountMember = chbxDiscountMember.Checked;
-            temp.RewardsEarned = int.Parse(txtRewardsEarned.Text);
+            
+            //temp.RewardsEarned = int.Parse(txtRewardsEarned.Text);
+            int rewardsEarned;
+            // Try to convert the inputText to a integer
+            if (int.TryParse(txtRewardsEarned.Text, out rewardsEarned))
+            {
+                // Conversion succeeded, it's a valid number
+                temp.RewardsEarned = rewardsEarned;
+            }
+            else
+            {
+                // Cant Convert?, it's not a valid number
+                // Show an error message to the user or handle the error correctlyyyyyyy
+                temp.Feedback += "\nERROR: Please enter a valid numeric value for Rewards Earned.";
+            }
 
             //If there's no big problem with the person's information
             if (temp.Feedback.Contains("ERROR") == false)
