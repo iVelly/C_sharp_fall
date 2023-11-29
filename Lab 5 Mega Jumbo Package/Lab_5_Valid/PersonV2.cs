@@ -19,11 +19,7 @@ namespace Midterm
             }
             set
             {
-                if (ValidOrBuggin.IsADouble(value) == false)
-                {
-                    Feedback += "\nERROR: Cellphone must only contain numbers";
-                }
-                else if (ValidOrBuggin.ExactLength(value, 10) == false)
+                if (ValidOrBuggin.ExactLength(value, 10) == false)
                 {
                     Feedback += "\nERROR: Cellphone must contain 10 numbers";
                 }
@@ -48,7 +44,7 @@ namespace Midterm
                 }
                 else if (ValidOrBuggin.ValidInstagramURL(value) == false)
                 {
-                    Feedback += "\nInvalid URL to instagram";
+                    Feedback += "\nERROR: Invalid URL to instagram";
                 }
                 else
                 {

@@ -24,7 +24,7 @@ namespace Midterm
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            Customer temp = new Customer();
+            PersonV2 temp = new PersonV2();
             temp.FirstName = txtfirstName.Text;
             temp.MiddleName = txtmiddleName.Text;
             temp.LastName = txtlastName.Text;
@@ -53,11 +53,7 @@ namespace Midterm
         + "\nZip Code: " + temp.Zip
         + "\nPhone Number: " + temp.Phone
         + "\n InstagramURL: " + temp.InstagramURL
-        + "\n Cell Phone: " + temp.CellPhone
-        + "\nCustomer Since: " + temp.CustomerSince.ToString("yyyy-MM-dd")
-        + "\nTotal Purchases: " + temp.TotalPurchases
-        + "\nDiscount Member: " + temp.DiscountMember
-        + "\nRewards Earned: " + temp.RewardsEarned;
+        + "\n Cell Phone: " + temp.CellPhone;
             }
             //Show that there's a problem with the information
             else
