@@ -1,0 +1,12 @@
+C:\Users\redzo\Documents\GitHub\C_sharp_fall\Lab_7_Control_Panel\bin\Debug\Midterm.exe.config
+C:\Users\redzo\Documents\GitHub\C_sharp_fall\Lab_7_Control_Panel\bin\Debug\Midterm.exe
+C:\Users\redzo\Documents\GitHub\C_sharp_fall\Lab_7_Control_Panel\bin\Debug\Midterm.pdb
+C:\Users\redzo\Documents\GitHub\C_sharp_fall\Lab_7_Control_Panel\obj\Debug\Lab_7.csproj.AssemblyReference.cache
+C:\Users\redzo\Documents\GitHub\C_sharp_fall\Lab_7_Control_Panel\obj\Debug\Midterm.ControlPanel.resources
+C:\Users\redzo\Documents\GitHub\C_sharp_fall\Lab_7_Control_Panel\obj\Debug\Midterm.Form1.resources
+C:\Users\redzo\Documents\GitHub\C_sharp_fall\Lab_7_Control_Panel\obj\Debug\Midterm.Properties.Resources.resources
+C:\Users\redzo\Documents\GitHub\C_sharp_fall\Lab_7_Control_Panel\obj\Debug\Lab_7.csproj.GenerateResource.cache
+C:\Users\redzo\Documents\GitHub\C_sharp_fall\Lab_7_Control_Panel\obj\Debug\Lab_7.csproj.CoreCompileInputs.cache
+C:\Users\redzo\Documents\GitHub\C_sharp_fall\Lab_7_Control_Panel\obj\Debug\Midterm.exe
+C:\Users\redzo\Documents\GitHub\C_sharp_fall\Lab_7_Control_Panel\obj\Debug\Midterm.pdb
+C:\Users\redzo\Documents\GitHub\C_sharp_fall\Lab_7_Control_Panel\obj\Debug\Midterm.SearchPerson.resources

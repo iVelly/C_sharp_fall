@@ -1,0 +1,12 @@
+C:\Users\redzo\Documents\GitHub\C_sharp_fall\Lab_8\obj\Debug\Lab_8.csproj.AssemblyReference.cache
+C:\Users\redzo\Documents\GitHub\C_sharp_fall\Lab_8\obj\Debug\Midterm.ControlPanel.resources
+C:\Users\redzo\Documents\GitHub\C_sharp_fall\Lab_8\obj\Debug\Midterm.Form1.resources
+C:\Users\redzo\Documents\GitHub\C_sharp_fall\Lab_8\obj\Debug\Midterm.Properties.Resources.resources
+C:\Users\redzo\Documents\GitHub\C_sharp_fall\Lab_8\obj\Debug\Midterm.SearchPerson.resources
+C:\Users\redzo\Documents\GitHub\C_sharp_fall\Lab_8\obj\Debug\Lab_8.csproj.GenerateResource.cache
+C:\Users\redzo\Documents\GitHub\C_sharp_fall\Lab_8\obj\Debug\Lab_8.csproj.CoreCompileInputs.cache
+C:\Users\redzo\Documents\GitHub\C_sharp_fall\Lab_8\obj\Debug\Midterm.exe
+C:\Users\redzo\Documents\GitHub\C_sharp_fall\Lab_8\obj\Debug\Midterm.pdb
+C:\Users\redzo\Documents\GitHub\C_sharp_fall\Lab_8\bin\Debug\Midterm.exe.config
+C:\Users\redzo\Documents\GitHub\C_sharp_fall\Lab_8\bin\Debug\Midterm.exe
+C:\Users\redzo\Documents\GitHub\C_sharp_fall\Lab_8\bin\Debug\Midterm.pdb
