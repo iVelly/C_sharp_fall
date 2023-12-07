@@ -197,31 +197,44 @@ namespace Midterm
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            // Create an instance of the PersonV2 class
-            PersonV2 temp = new PersonV2();
+            // Prompt the user for confirmation
+            DialogResult result = MessageBox.Show("Are you sure you want to delete this record?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
-           
-            // Retrieve the PersonID from the form 
-            temp.PersonID = Convert.ToInt32(lblPersonID.Text);
-
-            // Call the DeleteARecord method and store the result
-            string result = temp.DeleteARecord();
-
-            // Check if the result contains "ERROR"
-            if (result.Contains("ERROR"))
+            // Check if the user clicked "Yes"
+            if (result == DialogResult.Yes)
             {
-                // If there's an error, display it
-                lblFeedback.Text = result;
+                // The user confirmed the deletion...now let the terror commenceeee
+                // Create an instance of the PersonV2 class
+                PersonV2 temp = new PersonV2();
+
+                // Retrieve the PersonID from the form 
+                temp.PersonID = Convert.ToInt32(lblPersonID.Text);
+
+                // Call the DeleteARecord method and store the result
+                string deleteResult = temp.DeleteARecord();
+
+                // Check if the result contains "ERROR"
+                if (deleteResult.Contains("ERROR"))
+                {
+                    // If there's an error, display it
+                    lblFeedback.Text = deleteResult;
+                }
+                else
+                {
+                    // If deletion was successful, display a success message
+                    lblFeedback.Text = "SUCCESS: The record was successfully deleted.";
+                }
             }
             else
             {
-                // If deletion was successful, display a success message
-                lblFeedback.Text = "SUCCESS: The record was successfully deleted.";
-
+                // The user clicked "No" or closed the confirmation dialog
+                // Provide some feedback or take no action
+                lblFeedback.Text = "Deletion canceled.";
             }
         }
 
-        
+
+
 
     }
 }
