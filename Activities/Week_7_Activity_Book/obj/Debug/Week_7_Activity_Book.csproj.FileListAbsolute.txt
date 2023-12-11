@@ -1,0 +1,10 @@
+C:\Users\redzo\Documents\GitHub\C_sharp_fall\Activities\Week_7_Activity_Book\bin\Debug\Lab_5_Book.exe.config
+C:\Users\redzo\Documents\GitHub\C_sharp_fall\Activities\Week_7_Activity_Book\bin\Debug\Lab_5_Book.exe
+C:\Users\redzo\Documents\GitHub\C_sharp_fall\Activities\Week_7_Activity_Book\bin\Debug\Lab_5_Book.pdb
+C:\Users\redzo\Documents\GitHub\C_sharp_fall\Activities\Week_7_Activity_Book\obj\Debug\Week_7_Activity_Book.csproj.AssemblyReference.cache
+C:\Users\redzo\Documents\GitHub\C_sharp_fall\Activities\Week_7_Activity_Book\obj\Debug\Lab_5_Book.Form1.resources
+C:\Users\redzo\Documents\GitHub\C_sharp_fall\Activities\Week_7_Activity_Book\obj\Debug\Lab_5_Book.Properties.Resources.resources
+C:\Users\redzo\Documents\GitHub\C_sharp_fall\Activities\Week_7_Activity_Book\obj\Debug\Week_7_Activity_Book.csproj.GenerateResource.cache
+C:\Users\redzo\Documents\GitHub\C_sharp_fall\Activities\Week_7_Activity_Book\obj\Debug\Week_7_Activity_Book.csproj.CoreCompileInputs.cache
+C:\Users\redzo\Documents\GitHub\C_sharp_fall\Activities\Week_7_Activity_Book\obj\Debug\Lab_5_Book.exe
+C:\Users\redzo\Documents\GitHub\C_sharp_fall\Activities\Week_7_Activity_Book\obj\Debug\Lab_5_Book.pdb

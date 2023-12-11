@@ -1,0 +1,7 @@
+C:\Users\redzo\source\repos\iVelly\C_sharp_fall\Lab_4_Creating_Book_Class\bin\Debug\Lab_4_Creating_Book_Class.exe.config
+C:\Users\redzo\source\repos\iVelly\C_sharp_fall\Lab_4_Creating_Book_Class\bin\Debug\Lab_4_Creating_Book_Class.exe
+C:\Users\redzo\source\repos\iVelly\C_sharp_fall\Lab_4_Creating_Book_Class\bin\Debug\Lab_4_Creating_Book_Class.pdb
+C:\Users\redzo\source\repos\iVelly\C_sharp_fall\Lab_4_Creating_Book_Class\obj\Debug\Lab_4_Creating_Book_Class.csproj.AssemblyReference.cache
+C:\Users\redzo\source\repos\iVelly\C_sharp_fall\Lab_4_Creating_Book_Class\obj\Debug\Lab_4_Creating_Book_Class.csproj.CoreCompileInputs.cache
+C:\Users\redzo\source\repos\iVelly\C_sharp_fall\Lab_4_Creating_Book_Class\obj\Debug\Lab_4_Creating_Book_Class.exe
+C:\Users\redzo\source\repos\iVelly\C_sharp_fall\Lab_4_Creating_Book_Class\obj\Debug\Lab_4_Creating_Book_Class.pdb

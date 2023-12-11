@@ -1,0 +1,13 @@
+C:\Users\redzo\Documents\GitHub\C_sharp_fall\Final_Project\bin\Debug\Final_Project.exe.config
+C:\Users\redzo\Documents\GitHub\C_sharp_fall\Final_Project\bin\Debug\Final_Project.exe
+C:\Users\redzo\Documents\GitHub\C_sharp_fall\Final_Project\bin\Debug\Final_Project.pdb
+C:\Users\redzo\Documents\GitHub\C_sharp_fall\Final_Project\obj\Debug\Final_Project.csproj.AssemblyReference.cache
+C:\Users\redzo\Documents\GitHub\C_sharp_fall\Final_Project\obj\Debug\Final_Project.FillOutInfo.resources
+C:\Users\redzo\Documents\GitHub\C_sharp_fall\Final_Project\obj\Debug\Final_Project.HomeScreen.resources
+C:\Users\redzo\Documents\GitHub\C_sharp_fall\Final_Project\obj\Debug\Final_Project.Properties.Resources.resources
+C:\Users\redzo\Documents\GitHub\C_sharp_fall\Final_Project\obj\Debug\Final_Project.SearchEvent.resources
+C:\Users\redzo\Documents\GitHub\C_sharp_fall\Final_Project\obj\Debug\Final_Project.csproj.GenerateResource.cache
+C:\Users\redzo\Documents\GitHub\C_sharp_fall\Final_Project\obj\Debug\Final_Project.csproj.CoreCompileInputs.cache
+C:\Users\redzo\Documents\GitHub\C_sharp_fall\Final_Project\obj\Debug\Final_Project.exe
+C:\Users\redzo\Documents\GitHub\C_sharp_fall\Final_Project\obj\Debug\Final_Project.pdb
+C:\Users\redzo\Documents\GitHub\C_sharp_fall\Final_Project\obj\Debug\Final_Project.TotalRevScreen.resources
