@@ -48,6 +48,13 @@ namespace Final_Project
             return blnResult;
         }
 
+        public static bool IsAFutureDate(DateTime temp)
+        {
+            bool blnResult = temp > DateTime.Now;
+
+            return blnResult;
+        }
+
         public static bool IsAnInteger(string temp)
         {
             Int16 intResult;

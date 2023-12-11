@@ -48,7 +48,8 @@ namespace Final_Project
             get { return date; }
             set
             {
-                if (ValidOrBuggin.IsNotAFutureDate(value))
+                //tweaked this
+                if (ValidOrBuggin.IsAFutureDate(value))
                 {
                     feedback += "\nERROR: Event date cannot be in the past.";
                 }
